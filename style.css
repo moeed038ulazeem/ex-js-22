@@ -23,10 +23,13 @@ h1 {
     color: #333;
     background-color: rgb(175, 82, 82);
     border-radius: 400px;
+    font-weight: bold;
+    font-style: italic;
     
 }
 #question{
     font-weight: bold;
+    
 }
 
 #answers {
