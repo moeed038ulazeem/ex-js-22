@@ -1,25 +1,25 @@
 var questions = [
     {
         question: "What is the capital of France?",
-        choices: ["Berlin", "Madrid", "Paris", "Rome"],
+        choices: ["(A)-Berlin", "(B)-Madrid", "(C)-Paris", ],
         answer: 2
     },
     {
         question: "What is 2 + (-3)?",
-        choices: ["-1", "2", "5", "0"],
+        choices: ["(A)-1", "(B)2", "(C)5", ],
         answer: 0
     },
     {
         question: "who is the current prime minister of pakistan",
-        choices: ["Imran Khan", "Asif Ali Zardari", "Mian Muhammad Shahbaz Sharif"],
+        choices: ["(A)-Imran Khan", "(B)-Asif Ali Zardari", "(C)-Mian Muhammad Shahbaz Sharif"],
         answer: 2
     },
     {
         question: "Lemon Contain WHich Type of Acid",
-        choices: ["Acitic Acid", "Citric Acid", "Non Of These"],
+        choices: ["(A)-Acitic Acid", "(B)-Citric Acid", "(C)-Non Of These"],
         answer: 1
     },
-    // Add more questions as needed
+    
 ];
 
 var currentQuestionIndex = 0;

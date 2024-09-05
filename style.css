@@ -1,24 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #28a745;
+    background-color: #568c63;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    
 }
 
 .quiz-container {
-    background: white;
+    background: rgb(222, 215, 215);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 480px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 h1 {
     color: #333;
+    background-color: rgb(175, 82, 82);
+    border-radius: 400px;
+    
+}
+#question{
+    font-weight: bold;
 }
 
 #answers {
