@@ -1,4 +1,4 @@
-const questions = [
+var questions = [
     {
         question: "What is the capital of France?",
         choices: ["Berlin", "Madrid", "Paris", "Rome"],
@@ -22,17 +22,17 @@ const questions = [
     // Add more questions as needed
 ];
 
-let currentQuestionIndex = 0;
-let score = 0;
+var currentQuestionIndex = 0;
+var score = 0;
 
-const questionElement = document.getElementById('question');
-const answerButtons = document.querySelectorAll('.answer-button');
-const scoreElement = document.getElementById('score');
-const nextQuestionButton = document.getElementById('next-question');
-const playAgainButton = document.getElementById('play-again');
+var questionElement = document.getElementById('question');
+var answerButtons = document.querySelectorAll('.answer-button');
+var scoreElement = document.getElementById('score');
+var nextQuestionButton = document.getElementById('next-question');
+var playAgainButton = document.getElementById('play-again');
 
 function loadQuestion() {
-    const question = questions[currentQuestionIndex];
+    var question = questions[currentQuestionIndex];
     questionElement.textContent = question.question;
     answerButtons.forEach((button, index) => {
         button.textContent = question.choices[index];
@@ -41,8 +41,8 @@ function loadQuestion() {
 }
 
 function handleAnswerClick(event) {
-    const selectedIndex = parseInt(event.target.dataset.index);
-    const correctIndex = questions[currentQuestionIndex].answer;
+    var selectedIndex = parseInt(event.target.dataset.index);
+    var correctIndex = questions[currentQuestionIndex].answer;
     
     if (selectedIndex === correctIndex) {
         alert("Correct!");
@@ -81,14 +81,14 @@ function handlePlayAgain() {
 }
 
 function handleKeyDown(event) {
-    const keyToIndex = {
+    var keyToIndex = {
         '1': 0,
         '2': 1,
         '3': 2,
         '4': 3
     };
     
-    const index = keyToIndex[event.key];
+    var index = keyToIndex[event.key];
     
     if (index !== undefined) {
         answerButtons[index].click();
